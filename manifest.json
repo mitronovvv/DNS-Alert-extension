@@ -1,0 +1,22 @@
+{
+    "name": "DNS Alert",
+    "version": "1.2",
+    "description": "Alerts the user when a host DNS could've been replaced",
+    "manifest_version": 2,
+    "permissions": [
+        "webRequest",
+        "<all_urls>",
+        "storage",
+        "notifications"
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "icons":{
+        "32": "neutral.png"
+    },
+    "browser_action": {
+        "default_icon": "neutral.png"
+    }
+}
